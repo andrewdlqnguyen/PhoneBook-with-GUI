@@ -3,10 +3,10 @@ import java.util.List;
 
 
 
-public class AddressBook {
+public class AddressBook_main {
 	private List<BuddyInfo> buddyInfo;
 	
-	public AddressBook() {
+	public AddressBook_main() {
 		this.buddyInfo = new ArrayList<>();
 	}
 	
@@ -16,7 +16,7 @@ public class AddressBook {
 		}
 	}
 	
-	public String getAddressBookList() {
+	public String getAddressBook_mainList() {
 		int count = 1;
 		String result = "";
 		for (BuddyInfo b: buddyInfo) {
@@ -39,14 +39,14 @@ public class AddressBook {
 		BuddyInfo buddy2 = new BuddyInfo("Andrew", "105 Arlington", "416 669 9668");
 		BuddyInfo buddy3 = new BuddyInfo("Nick", "89 Turner", "905 670 2426");
 		
-		AddressBook addressBook = new AddressBook();
-		addressBook.addBuddy(buddy);
-		addressBook.addBuddy(buddy2);
-		addressBook.addBuddy(buddy3);
-		addressBook.getAddressBookList();
-//		addressBook.removeBuddy(0);
+		AddressBook_main AddressBook_main = new AddressBook_main();
+		AddressBook_main.addBuddy(buddy);
+		AddressBook_main.addBuddy(buddy2);
+		AddressBook_main.addBuddy(buddy3);
+		AddressBook_main.getAddressBook_mainList();
+//		AddressBook_main.removeBuddy(0);
 		
-		GUI gui = new GUI(addressBook);
+		GUI gui = new GUI(AddressBook_main);
 	}
 }
 
