@@ -3,9 +3,9 @@ public class BuddyInfo {
 	
 	String name;
 	String address;
-	int phoneNumber;
+	String phoneNumber;
 
-	BuddyInfo(String name,String address,int phoneNumber)
+	BuddyInfo(String name,String address,String phoneNumber)
 	{
 		this.name = name;
 		this.address = address;
@@ -28,20 +28,12 @@ public class BuddyInfo {
 		this.address = address;
 	}
 
-	public int getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
-	}
-
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		BuddyInfo buddy = new BuddyInfo("Tom","Carleton",1234);
-		buddy.setName("Homer");
-		System.out.println("Hello " + buddy.getName() + "!");
 	}
 
 }
